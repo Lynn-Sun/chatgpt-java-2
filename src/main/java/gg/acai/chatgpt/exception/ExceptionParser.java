@@ -21,7 +21,7 @@ public class ExceptionParser {
     }
 
     public void register(ParsedExceptionEntry entry) {
-        this.cache.set(entry.exceptionKeywords(), entry.exceptionClass());
+        this.cache.set(entry.getExceptionKeywords(), entry.getExceptionClass());
     }
 
     public void register(List<ParsedExceptionEntry> entries) {
